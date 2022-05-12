@@ -11,15 +11,19 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var textField2: UITextField!
     
-   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
     @IBAction func touched(_ sender: Any) {
-        label.text = textField.text
+        let a = textField.text!
+        let b = textField2.text!
+        
+        let sum = Int(a)! + Int(b)!
+        label.text = "sum = \(sum) "
     }
 }
 
