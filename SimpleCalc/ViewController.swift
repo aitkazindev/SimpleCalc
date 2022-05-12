@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var textField: UITextField!
     
    
     override func viewDidLoad() {
@@ -18,8 +19,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func touched(_ sender: Any) {
-        label.text = "Hello User"
+        label.text = textField.text
     }
-
 }
 
